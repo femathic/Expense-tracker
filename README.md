@@ -1,15 +1,18 @@
-# Expense Tracker (React)
-
-This is a React version of the [vanilla JS Expense Tracker](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker). It uses functional components with hooks and the context API
-
 ## Usage
 ```
+# Run in root folder
 npm install
 
-# Run on http://localhost:3000
-npm start
-
-# Build for prod
+# Run in /client folder
+cd client
+npm install
 npm run build
-```
 
+# Run in root folder
+cd ..
+npm run start
+
+# On your browser visit 
+http://localhost:5000
+
+```
