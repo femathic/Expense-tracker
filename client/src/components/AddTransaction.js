@@ -7,7 +7,7 @@ export const AddTransaction = () => {
 
   const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
 
     const newTransaction = {
@@ -15,10 +15,14 @@ export const AddTransaction = () => {
       text,
       amount: +amount
     }
-
+    
     addTransaction(newTransaction);
-  }
 
+    setText("")
+
+    setAmount(0)
+  }
+  
   return (
     <>
       <h3>Add new transaction</h3>
