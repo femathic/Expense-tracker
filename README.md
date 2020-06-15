@@ -18,3 +18,4 @@ http://localhost:5000
 ```
 
 ### Hosted on heroku
+https://expense-tracka.herokuapp.com/
