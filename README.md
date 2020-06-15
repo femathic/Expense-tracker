@@ -16,3 +16,5 @@ npm run start
 http://localhost:5000
 
 ```
+
+### Hosted on heroku
