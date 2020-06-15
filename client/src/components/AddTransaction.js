@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState';
 
-export const AddTransaction = () => {
+export const AddTransaction = ({closeForm}) => {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState(0);
 
@@ -27,6 +27,13 @@ export const AddTransaction = () => {
     <>
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
+        <button
+          type="button"
+          className="close-button"
+          onClick={() => closeForm()}
+        >
+          X
+        </button>
         <div className="form-control">
           <label htmlFor="text">Text</label>
           <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text..." />
